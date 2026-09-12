@@ -47,8 +47,8 @@ def evaluar_cadera(ia_medido: float, l: float, m: float, s: float):
 
 # --- INTERFAZ GRÁFICA (UI) ---
 st.title("🦴 Evaluador Acetabular (AA)")
-st.caption("Basado en curvas de percentiles de Novais et al. (2018) )
-st.caption(Novais EN, Pan Z, Autruong PT, Meyers ML, Chang FM. Normal Percentile Reference Curves and Correlation of Acetabular Index and Acetabular Depth Ratio in Children. J Pediatr Orthop. 2018 Mar;38(3):163-169. doi: 10.1097/BPO.0000000000000791. PMID: 27261963.)
+st.caption("Basado en curvas de percentiles de Novais et al. (2018)
+st.caption(Novais EN, Pan Z, Autruong PT, Meyers ML, Chang FM. Normal Percentile Reference Curves and Correlation of Acetabular Index and Acetabular Depth Ratio in Children. J Pediatr Orthop. 2018 Mar;38(3):163-169. doi: 10.1097/BPO.0000000000000791. PMID: 27261963.
 st.subheader("Datos del Paciente")
 col1, col2 = st.columns(2)
 

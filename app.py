@@ -36,7 +36,7 @@ def evaluar_cadera(ia_medido: float, l: float, m: float, s: float):
   elif 50.0 <= percentil <= 90.0:
     diag = "EN RIESGO / LÍMITE"
     color = "orange"
-    rec = "Zona de monitoreo: dar seguimiento evolutivo a la remodelación."
+    rec = "Zona de monitoreo: dar seguimiento a la evolución de la remodelación."
   else:
     diag = "DISPLASIA ACETABULAR"
     color = "red"
@@ -46,8 +46,8 @@ def evaluar_cadera(ia_medido: float, l: float, m: float, s: float):
 
 
 # --- INTERFAZ GRÁFICA (UI) ---
-st.title("🦴 Evaluador Acetabular (IA)")
-st.caption("Basado en curvas percentiladas de Novais et al. (2016)")
+st.title("🦴 Evaluador Acetabular (AA)")
+st.caption("Basado en curvas de percentiles de Novais et al. (2016)")
 
 st.subheader("Datos del Paciente")
 col1, col2 = st.columns(2)
@@ -66,17 +66,17 @@ with col2:
       "Fecha de Radiografía", value=date.today(), max_value=date.today()
   )
 
-st.subheader("Mediciones Radiológicas (Sourcil)")
+st.subheader("Mediciones Radiológicas (a la ceja o sourcil)")
 col_der, col_izq = st.columns(2)
 
 with col_der:
   ia_der = st.number_input(
-      "Índice Derecho (°)", min_value=0.0, max_value=50.0, value=22.0, step=0.5
+      "Ángulo Derecho (°)", min_value=0.0, max_value=50.0, value=22.0, step=0.5
   )
 
 with col_izq:
   ia_izq = st.number_input(
-      "Índice Izquierdo (°)",
+      "Ángulo Izquierdo (°)",
       min_value=0.0,
       max_value=50.0,
       value=27.0,
